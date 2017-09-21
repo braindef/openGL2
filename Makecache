@@ -341,7 +341,7 @@ done
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:06 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -2612,7 +2612,7 @@ install-ps-am:
 # strcache performance: lookups = 739 / hit rate = 44%
 # hash-table stats:
 # Load=411/8192=5%, Rehash=0, Collisions=45/739=6%
-# Finished Make data base on Thu Sep 21 22:52:06 2017
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 
 Making all in src
 echo "  CXX     " Lession4/main-demo.o;g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/SDL2 -D_REENTRANT -I/usr/include/freetype2 `pkg-config --cflags gl` `pkg-config --cflags glu`     -MT Lession4/main-demo.o -MD -MP -MF Lession4/.deps/main-demo.Tpo -c -o Lession4/main-demo.o `test -f 'Lession4/demo.cpp' || echo './'`Lession4/demo.cpp
@@ -2779,7 +2779,7 @@ done
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:06 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -6976,7 +6976,7 @@ common/main-shader_utils.o: common/shader_utils.cpp common/.dirstamp common/.dep
 # Not a target:
 Lession4/demo.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2017-09-21 22:44:20.858405142
+#  Last modified 2017-09-21 22:53:27.950768409
 #  File has been updated.
 #  Successfully updated.
 
@@ -7683,8 +7683,8 @@ install-html: install-html-am
 
 # strcache performance: lookups = 12191 / hit rate = 22%
 # hash-table stats:
-# Load=9462/16384=58%, Rehash=1, Collisions=23016/19873=116%
-# Finished Make data base on Thu Sep 21 22:52:06 2017
+# Load=9462/16384=58%, Rehash=1, Collisions=23010/19873=116%
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 
 Making all in po
 make .pot-update
@@ -7757,7 +7757,7 @@ test ! -f .po || { \
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:06 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -9659,7 +9659,7 @@ install: install-exec install-data
 # strcache performance: lookups = 388 / hit rate = 37%
 # hash-table stats:
 # Load=243/8192=3%, Rehash=0, Collisions=52/388=13%
-# Finished Make data base on Thu Sep 21 22:52:06 2017
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 
 test "0.19" = "0.19" || { echo "*** error: gettext infrastructure mismatch: using a Makefile.in.in from gettext version 0.19 but the autoconf macros are from gettext version 0.19" 1>&2; exit 1; }
 test ! -f ./.pot || \
@@ -9676,7 +9676,7 @@ test ! -f ./.pot || { \
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:06 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -11599,7 +11599,7 @@ install: install-exec install-data
 # strcache performance: lookups = 391 / hit rate = 36%
 # hash-table stats:
 # Load=247/8192=3%, Rehash=0, Collisions=53/391=14%
-# Finished Make data base on Thu Sep 21 22:52:06 2017
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 
 test -f config.h || rm -f stamp-h1
 test -f config.h || make  stamp-h1
@@ -11610,7 +11610,7 @@ test -f config.h || make  stamp-h1
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:06 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -15214,7 +15214,7 @@ mostlyclean-recursive:
 # strcache performance: lookups = 1023 / hit rate = 55%
 # hash-table stats:
 # Load=459/8192=6%, Rehash=0, Collisions=40/1023=4%
-# Finished Make data base on Thu Sep 21 22:52:07 2017
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
@@ -15223,7 +15223,7 @@ mostlyclean-recursive:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:07 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -18822,7 +18822,7 @@ mostlyclean-recursive:
 # strcache performance: lookups = 1023 / hit rate = 55%
 # hash-table stats:
 # Load=459/8192=6%, Rehash=0, Collisions=40/1023=4%
-# Finished Make data base on Thu Sep 21 22:52:07 2017
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
@@ -18831,7 +18831,7 @@ mostlyclean-recursive:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep 21 22:52:07 2017
+# Make data base, printed on Thu Sep 21 22:53:45 2017
 
 # Variables
 
@@ -22483,5 +22483,5 @@ mostlyclean-recursive:
 # strcache performance: lookups = 1024 / hit rate = 55%
 # hash-table stats:
 # Load=459/8192=6%, Rehash=0, Collisions=40/1024=4%
-# Finished Make data base on Thu Sep 21 22:52:07 2017
+# Finished Make data base on Thu Sep 21 22:53:45 2017
 

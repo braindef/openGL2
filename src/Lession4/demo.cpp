@@ -23,8 +23,11 @@ using namespace std;
 
 GLuint vbo_triangle;
 GLuint program;
+GLuint program2;
 GLint attribute_coord3d, attribute_v_color;
+GLint attribute_coord3d_2, attribute_v_color_2;
 GLint uniform_m_transform;
+GLint uniform_m_transform_2;
 
 struct attributes {
 	GLfloat coord3d[3];
@@ -47,16 +50,32 @@ bool init_resources() {
 	if ((vs = create_shader("/home/marc/Projects/openGL2/src/Lession4/triangle.v.glsl", GL_VERTEX_SHADER))   == 0) return false;
 	if ((fs = create_shader("/home/marc/Projects/openGL2/src/Lession4/triangle.f.glsl", GL_FRAGMENT_SHADER)) == 0) return false;
 
+	GLuint vsTransparent, fsTransparent;
+	if ((vsTransparent = create_shader("/home/marc/Projects/openGL2/src/Lession4/t.v.glsl", GL_VERTEX_SHADER))   == 0) return false;
+	if ((fsTransparent = create_shader("/home/marc/Projects/openGL2/src/Lession4/t.f.glsl", GL_FRAGMENT_SHADER)) == 0) return false;
+
 	program = glCreateProgram();
+	program2 = glCreateProgram();
 	glAttachShader(program, vs);
 	glAttachShader(program, fs);
+	glAttachShader(program2, vsTransparent);
+	glAttachShader(program2, fsTransparent);
 	glLinkProgram(program);
+	glLinkProgram(program2);
 	glGetProgramiv(program, GL_LINK_STATUS, &link_ok);
 	if (!link_ok) {
 		cerr << "glLinkProgram:";
 		print_log(program);
 		return false;
 	}
+
+	glGetProgramiv(program2, GL_LINK_STATUS, &link_ok);
+	if (!link_ok) {
+		cerr << "glLinkProgram:";
+		print_log(program2);
+		return false;
+	}
+
 
 	const char* attribute_name;
 	attribute_name = "coord3d";
@@ -65,12 +84,28 @@ bool init_resources() {
 		cerr << "Could not bind attribute " << attribute_name << endl;
 		return false;
 	}
+	//const char* attribute_name;
+	attribute_name = "coord3d";
+	attribute_coord3d_2 = glGetAttribLocation(program2, attribute_name);
+	if (attribute_coord3d_2 == -1) {
+		cerr << "Could not bind attribute   " << attribute_name << endl;
+		return false;
+	}
+/*
 	attribute_name = "v_color";
 	attribute_v_color = glGetAttribLocation(program, attribute_name);
 	if (attribute_v_color == -1) {
+		cerr << "Could not bind attribute:: " << attribute_name << endl;
+		return false;
+	}
+*/
+	attribute_name = "v_color";
+	attribute_v_color = glGetAttribLocation(program2, attribute_name);
+	if (attribute_v_color_2 == -1) {
 		cerr << "Could not bind attribute " << attribute_name << endl;
 		return false;
 	}
+
 	const char* uniform_name;
 	uniform_name = "m_transform";
 	uniform_m_transform = glGetUniformLocation(program, uniform_name);
@@ -78,6 +113,15 @@ bool init_resources() {
 		cerr << "Could not bind uniform_fade " << uniform_name << endl;
 		return false;
 	}
+
+	const char* uniform_name_2;
+	uniform_name_2 = "m_transform";
+	uniform_m_transform_2 = glGetUniformLocation(program2, uniform_name_2);
+	if (uniform_m_transform_2 == -1) {
+		cerr << "Could not bind uniform_fade " << uniform_name << endl;
+		return false;
+	}
+
 
 	return true;
 }
@@ -87,19 +131,54 @@ void logic() {
 	float angle = SDL_GetTicks() / 1000.0 * 45;  // 45° per second
 	glm::vec3 axis_z(0, 0, 1);
 	//glm::mat4 ist die Einheitsmatrix welche dann mit glm::tralnslate verschoben wird (matrix multiplikation) und dann mit glm::rotate ratiert wird (auch matrixmultiplikation)
-	glm::mat4 m_transform = glm::translate(glm::mat4(1.0f), glm::vec3(move, 0.0, 0.0)) * glm::rotate(glm::mat4(1.0f), glm::radians(angle), axis_z);
+	glm::mat4 m_transform = glm::translate(glm::mat4(1.0f), glm::vec3(move, 0.0, 0.0)) * glm::rotate(glm::mat4(1.0f), glm::radians(angle*3), axis_z);
 
 	glUseProgram(program);
 	glUniformMatrix4fv(uniform_m_transform, 1, GL_FALSE, glm::value_ptr(m_transform));
+	glUseProgram(program2);
+	glUniformMatrix4fv(uniform_m_transform_2, 1, GL_FALSE, glm::value_ptr(m_transform));
 }
 
 void render(SDL_Window* window) {
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 
+//Turn on wireframe Mode
+glPolygonMode(GL_FRONT, GL_LINE);
+glPolygonMode(GL_BACK, GL_LINE);
+glLineWidth(10.0f);
 	glUseProgram(program);
 	glEnableVertexAttribArray(attribute_coord3d);
 	glEnableVertexAttribArray(attribute_v_color);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo_triangle);
+	glVertexAttribPointer(
+		attribute_coord3d,   // attribute
+		3,                   // number of elements per vertex, here (x,y,z)
+		GL_FLOAT,            // the type of each element
+		GL_FALSE,            // take our values as-is
+		sizeof(struct attributes),  // next coord3d appears every 6 floats
+		0                    // offset of first element
+		);
+	glVertexAttribPointer(
+		attribute_v_color,      // attribute
+		3,                      // number of elements per vertex, here (r,g,b)
+		GL_FLOAT,               // the type of each element
+		GL_FALSE,               // take our values as-is
+		sizeof(struct attributes),  // stride
+		//(void*) (2 * sizeof(GLfloat))     // offset of first element
+		(void*) offsetof(struct attributes, v_color)  // offset
+		);
+
+	/* Push each element in buffer_vertices to the vertex shader */
+	glDrawArrays(GL_TRIANGLES, 0, 3);
+
+// Turn off wireframe mode
+glPolygonMode(GL_FRONT, GL_FILL);
+glPolygonMode(GL_BACK, GL_FILL);
+
+		glUseProgram(program2);
+	glEnableVertexAttribArray(attribute_coord3d_2);
+	glEnableVertexAttribArray(attribute_v_color_2);
 	glBindBuffer(GL_ARRAY_BUFFER, vbo_triangle);
 	glVertexAttribPointer(
 		attribute_coord3d,   // attribute
@@ -130,6 +209,7 @@ void render(SDL_Window* window) {
 void free_resources()
 {
   glDeleteProgram(program);
+  glDeleteProgram(program2);
   glDeleteBuffers(1, &vbo_triangle);
 }
 
