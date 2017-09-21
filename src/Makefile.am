@@ -3,7 +3,7 @@
 
 bin_PROGRAMS=main
 
-main_SOURCES=demo.cpp
+main_SOURCES=Lession4/demo.cpp common/shader_utils.cpp
 
 main_CPPFLAGS=-I/usr/include/SDL2 -D_REENTRANT
 

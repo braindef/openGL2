@@ -61,8 +61,8 @@ int init_resources()
   GLint link_ok = GL_FALSE;
 
   GLuint vs, fs;
-  if ((vs = create_shader("triangle.v.glsl", GL_VERTEX_SHADER))   == 0) return 0;
-  if ((fs = create_shader("triangle.f.glsl", GL_FRAGMENT_SHADER)) == 0) return 0;
+  if ((vs = create_shader("/home/marc/Projects/openGL2/src/Lession3/triangle.v.glsl", GL_VERTEX_SHADER))   == 0) return 0;
+  if ((fs = create_shader("/home/marc/Projects/openGL2/src/Lession3/triangle.f.glsl", GL_FRAGMENT_SHADER)) == 0) return 0;
 
   program = glCreateProgram();
   glAttachShader(program, vs);
