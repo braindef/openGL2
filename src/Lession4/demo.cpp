@@ -86,6 +86,7 @@ void logic() {
 	float move = sinf(SDL_GetTicks() / 1000.0 * (2*3.14) / 5); // -1<->+1 every 5 seconds
 	float angle = SDL_GetTicks() / 1000.0 * 45;  // 45° per second
 	glm::vec3 axis_z(0, 0, 1);
+	//glm::mat4 ist die Einheitsmatrix welche dann mit glm::tralnslate verschoben wird (matrix multiplikation) und dann mit glm::rotate ratiert wird (auch matrixmultiplikation)
 	glm::mat4 m_transform = glm::translate(glm::mat4(1.0f), glm::vec3(move, 0.0, 0.0)) * glm::rotate(glm::mat4(1.0f), glm::radians(angle), axis_z);
 
 	glUseProgram(program);
