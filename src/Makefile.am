@@ -5,7 +5,9 @@ bin_PROGRAMS=main
 
 #main_SOURCES=Lession6/cube.cpp common/shader_utils.cpp
 
-main_SOURCES=LearnOpenGL_Lession1/hello_window_clear.cpp LearnOpenGL_Lession1/glad.c
+#main_SOURCES=LearnOpenGL/hello_window_clear.cpp LearnOpenGL/glad.c
+#main_SOURCES=LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+main_SOURCES=LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
 
 
 main_CPPFLAGS=-I/usr/include/SDL2 -D_REENTRANT `pkg-config SDL2_image --cflags`
