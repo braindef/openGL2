@@ -36,7 +36,7 @@ struct attributes {
 
 bool init_resources() {
 	struct attributes triangle_attributes[] = {
-		{{ 0.0,  0.8, 0.0}, {1.0, 1.0, 0.0}},
+		{{ 0.0,  0.8, 0.0}, {1.0, 0.0, 0.0}},
 		{{-0.8, -0.8, 0.0}, {0.0, 0.0, 1.0}},
 		{{ 0.8, -0.8, 0.0}, {1.0, 0.0, 0.0}}
 	};
