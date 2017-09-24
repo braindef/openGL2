@@ -7,7 +7,9 @@ bin_PROGRAMS=main
 
 #main_SOURCES=LearnOpenGL/hello_window_clear.cpp LearnOpenGL/glad.c
 #main_SOURCES=LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
-main_SOURCES=LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+#main_SOURCES=LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+#main_SOURCES=LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
+main_SOURCES=LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 
 
 main_CPPFLAGS=-I/usr/include/SDL2 -D_REENTRANT `pkg-config SDL2_image --cflags`

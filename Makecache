@@ -341,7 +341,7 @@ done
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:23 2017
+# Make data base, printed on Sun Sep 24 19:34:47 2017
 
 # Variables
 
@@ -2612,7 +2612,7 @@ install-ps-am:
 # strcache performance: lookups = 739 / hit rate = 44%
 # hash-table stats:
 # Load=411/8192=5%, Rehash=0, Collisions=45/739=6%
-# Finished Make data base on Sat Sep 23 01:30:23 2017
+# Finished Make data base on Sun Sep 24 19:34:47 2017
 
 Making all in src
  cd .. && /bin/bash /home/marc/Projects/openGL2/build-aux/missing automake-1.15 --foreign src/Makefile
@@ -2626,7 +2626,7 @@ config.status: executing depfiles commands
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:47 2017
 
 # Variables
 
@@ -2658,7 +2658,7 @@ CWEAVE = cweave
 CPPFLAGS = -I/usr/include/freetype2 `pkg-config --cflags gl` `pkg-config --cflags glu` $(sdl2-config --cflags) $(EXTRA_CPPFLAGS)
 # makefile (from 'Makefile', line 255)
 INSTALL = /usr/bin/install -c
-# makefile (from 'Makefile', line 386)
+# makefile (from 'Makefile', line 390)
 main_LDFLAGS = $(sdl2-config --libs) `pkg-config SDL2_image --libs`
 # makefile (from 'Makefile', line 232)
 DEFS = -DHAVE_CONFIG_H
@@ -2719,7 +2719,7 @@ INSTALL_SCRIPT = ${INSTALL}
 # makefile (from 'Makefile', line 298)
 OPENGL2_LIBS = -lgio-2.0 -lgobject-2.0 -lglib-2.0
 # makefile (from '../git.mk', line 1)
-MAKEFILE_LIST :=  Makefile LearnOpenGL/.deps/main-glad.Po LearnOpenGL/.deps/main-hello_triangle.Po ../git.mk
+MAKEFILE_LIST :=  Makefile LearnOpenGL/.deps/main-glad.Po LearnOpenGL/.deps/main-shaders_uniform.Po ../git.mk
 # makefile (from 'Makefile', line 346)
 builddir = .
 # makefile (from 'Makefile', line 345)
@@ -2760,7 +2760,7 @@ API_VERSION = 0
 am__make_running_with_option = case $${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '$${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$$MAKEFLAGS; if $(am__is_gnu_make); then sane_makeflags=$$MFLAGS; else case $$MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$$MAKEFLAGS" | sed "s/$$bs$$bs[$$bs $$bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$$flg" | sed "s/$$1.*$$//"`; }; for flg in $$sane_makeflags; do test $$skip_next = yes && { skip_next=no; continue; }; case $$flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $$flg in *$$target_option*) has_opt=yes; break;; esac; done; test $$has_opt = yes
 # makefile (from 'Makefile', line 222)
 CC = gcc
-# makefile (from 'Makefile', line 387)
+# makefile (from 'Makefile', line 391)
 EXTRA_LDLIBS = -lGL
 # makefile (from 'Makefile', line 115)
 CONFIG_CLEAN_FILES = 
@@ -3006,7 +3006,7 @@ GITIGNORE_MAINTAINERCLEANFILES_MAKEFILE_IN = `cd $(top_srcdir); $(AUTOCONF) --tr
 top_build_prefix = ../
 # makefile (from 'Makefile', line 72)
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-# makefile (from 'Makefile', line 385)
+# makefile (from 'Makefile', line 389)
 main_CPPFLAGS = -I/usr/include/SDL2 -D_REENTRANT `pkg-config SDL2_image --cflags`
 # makefile (from 'Makefile', line 93)
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -3078,8 +3078,8 @@ AS = as
 sharedstatedir = ${prefix}/com
 # default
 PREPROCESS.S = $(CC) -E $(CPPFLAGS)
-# makefile (from 'Makefile', line 384)
-main_SOURCES = LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+# makefile (from 'Makefile', line 388)
+main_SOURCES = LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
 # default
 COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
 # default
@@ -3117,7 +3117,7 @@ host_os = linux-gnu
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # makefile (from 'Makefile', line 120)
-am_main_OBJECTS = LearnOpenGL/main-hello_triangle.$(OBJEXT) LearnOpenGL/main-glad.$(OBJEXT)
+am_main_OBJECTS = LearnOpenGL/main-shaders_uniform.$(OBJEXT) LearnOpenGL/main-glad.$(OBJEXT)
 # makefile (from 'Makefile', line 228)
 CXXCPP = g++ -E
 # makefile (from 'Makefile', line 174)
@@ -3387,12 +3387,12 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 # ../m4/RCS: could not be stat'd.
 # ../SCCS: could not be stat'd.
 # ../RCS: could not be stat'd.
-# LearnOpenGL/.deps (device 2049, inode 3148764): 6 files, 8 impossibilities.
+# LearnOpenGL/.deps (device 2049, inode 3148764): 8 files, 8 impossibilities.
 # .. (device 2049, inode 2756962): 31 files, 8 impossibilities.
 # LearnOpenGL/.deps/SCCS: could not be stat'd.
 # RCS: could not be stat'd.
 
-# 112 files, 116 impossibilities in 12 directories.
+# 114 files, 116 impossibilities in 12 directories.
 
 # Implicit Rules
 
@@ -3403,19 +3403,19 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 %.lo: %.c
-#  recipe to execute (from 'Makefile', line 513):
+#  recipe to execute (from 'Makefile', line 517):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
 
 %.o: %.c
-#  recipe to execute (from 'Makefile', line 497):
+#  recipe to execute (from 'Makefile', line 501):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
 
 %.obj: %.c
-#  recipe to execute (from 'Makefile', line 505):
+#  recipe to execute (from 'Makefile', line 509):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -3427,19 +3427,19 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 %.lo: %.cpp
-#  recipe to execute (from 'Makefile', line 551):
+#  recipe to execute (from 'Makefile', line 555):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
 
 %.o: %.cpp
-#  recipe to execute (from 'Makefile', line 535):
+#  recipe to execute (from 'Makefile', line 539):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
 
 %.obj: %.cpp
-#  recipe to execute (from 'Makefile', line 543):
+#  recipe to execute (from 'Makefile', line 547):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -3505,12 +3505,12 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 #  Modification time never checked.
 #  File has not been updated.
 
-cscopelist-am: LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+cscopelist-am: LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 614):
+#  recipe to execute (from 'Makefile', line 618):
 	list='$(am__tagged_files)'; \
 	case "$(srcdir)" in \
 	  [\\/]* | ?:[\\/]*) sdir="$(srcdir)" ;; \
@@ -3523,6 +3523,11 @@ cscopelist-am: LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
 	    echo "$$sdir/$$i"; \
 	  fi; \
 	done >> $(top_builddir)/cscope.files
+
+/usr/include/x86_64-linux-gnu/bits/inf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 /usr/include/c++/7/exception:
 #  Implicit rule search has not been done.
@@ -3554,11 +3559,16 @@ maintainer-clean: maintainer-clean-am gitignore-clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 750):
+#  recipe to execute (from 'Makefile', line 754):
 	-rm -rf LearnOpenGL/$(DEPDIR)
 	-rm -f Makefile
 
 /usr/include/c++/7/iosfwd:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -3579,7 +3589,7 @@ distclean-compile:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 491):
+#  recipe to execute (from 'Makefile', line 495):
 	-rm -f *.tab.c
 
 /usr/include/c++/7/ext/alloc_traits.h:
@@ -3592,7 +3602,7 @@ GTAGS:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 608):
+#  recipe to execute (from 'Makefile', line 612):
 	here=`$(am__cd) $(top_builddir) && pwd` \
 	  && $(am__cd) $(top_srcdir) \
 	  && gtags -i $(GTAGS_ARGS) "$$here"
@@ -3601,7 +3611,7 @@ LearnOpenGL/.dirstamp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 471):
+#  recipe to execute (from 'Makefile', line 475):
 	@$(MKDIR_P) LearnOpenGL
 	@: > LearnOpenGL/$(am__dirstamp)
 
@@ -3635,6 +3645,11 @@ LearnOpenGL/.dirstamp:
 #  Modification time never checked.
 #  File has not been updated.
 
+/usr/include/c++/7/cmath:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 git-all: git-mk-install
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -3651,7 +3666,7 @@ distclean-tags:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 628):
+#  recipe to execute (from 'Makefile', line 632):
 	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
@@ -3677,21 +3692,13 @@ install-am: all-am
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 673):
+#  recipe to execute (from 'Makefile', line 677):
 	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-LearnOpenGL/main-hello_triangle.o: LearnOpenGL/hello_triangle.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp LearnOpenGL/hello_triangle.cpp /usr/include/stdc-predef.h LearnOpenGL/glad/glad.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h /usr/include/KHR/khrplatform.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h /usr/include/x86_64-linux-gnu/bits/wordsize.h /usr/include/x86_64-linux-gnu/gnu/stubs.h /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/inttypes.h /usr/include/GLFW/glfw3.h /usr/include/GL/gl.h /usr/include/c++/7/iostream /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h /usr/include/x86_64-linux-gnu/c++/7/bits/cpu_defines.h /usr/include/c++/7/ostream /usr/include/c++/7/ios /usr/include/c++/7/iosfwd /usr/include/c++/7/bits/stringfwd.h /usr/include/c++/7/bits/memoryfwd.h /usr/include/c++/7/bits/postypes.h /usr/include/c++/7/cwchar /usr/include/wchar.h /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h /usr/include/xlocale.h /usr/include/c++/7/exception /usr/include/c++/7/bits/exception.h /usr/include/c++/7/bits/exception_ptr.h /usr/include/c++/7/bits/exception_defines.h /usr/include/c++/7/bits/cxxabi_init_exception.h /usr/include/c++/7/typeinfo /usr/include/c++/7/bits/hash_bytes.h /usr/include/c++/7/new /usr/include/c++/7/bits/nested_exception.h /usr/include/c++/7/bits/move.h /usr/include/c++/7/bits/concept_check.h /usr/include/c++/7/type_traits /usr/include/c++/7/bits/char_traits.h /usr/include/c++/7/bits/stl_algobase.h /usr/include/c++/7/bits/functexcept.h /usr/include/c++/7/bits/cpp_type_traits.h /usr/include/c++/7/ext/type_traits.h /usr/include/c++/7/ext/numeric_traits.h /usr/include/c++/7/bits/stl_pair.h /usr/include/c++/7/bits/stl_iterator_base_types.h /usr/include/c++/7/bits/stl_iterator_base_funcs.h /usr/include/c++/7/debug/assertions.h /usr/include/c++/7/bits/stl_iterator.h /usr/include/c++/7/bits/ptr_traits.h /usr/include/c++/7/debug/debug.h /usr/include/c++/7/bits/predefined_ops.h /usr/include/c++/7/cstdint /usr/include/c++/7/bits/localefwd.h /usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h /usr/include/c++/7/clocale /usr/include/locale.h /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/7/cctype /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/types.h /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h /usr/include/x86_64-linux-gnu/bits/byteswap.h /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/c++/7/bits/ios_base.h /usr/include/c++/7/ext/atomicity.h /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/sched.h /usr/include/x86_64-linux-gnu/bits/time.h /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/x86_64-linux-gnu/c++/7/bits/atomic_word.h /usr/include/c++/7/bits/locale_classes.h /usr/include/c++/7/string /usr/include/c++/7/bits/allocator.h /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h /usr/include/c++/7/ext/new_allocator.h /usr/include/c++/7/bits/ostream_insert.h /usr/include/c++/7/bits/cxxabi_forced.h /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/backward/binders.h /usr/include/c++/7/bits/range_access.h /usr/include/c++/7/initializer_list /usr/include/c++/7/bits/basic_string.h /usr/include/c++/7/ext/alloc_traits.h /usr/include/c++/7/bits/alloc_traits.h /usr/include/c++/7/ext/string_conversions.h /usr/include/c++/7/cstdlib /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/x86_64-linux-gnu/sys/select.h /usr/include/x86_64-linux-gnu/bits/select.h /usr/include/x86_64-linux-gnu/bits/sigset.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/c++/7/bits/std_abs.h /usr/include/c++/7/cstdio /usr/include/libio.h /usr/include/_G_config.h /usr/include/x86_64-linux-gnu/bits/stdio_lim.h /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/c++/7/cerrno /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h /usr/include/c++/7/bits/functional_hash.h /usr/include/c++/7/bits/basic_string.tcc /usr/include/c++/7/bits/locale_classes.tcc /usr/include/c++/7/system_error /usr/include/x86_64-linux-gnu/c++/7/bits/error_constants.h /usr/include/c++/7/stdexcept /usr/include/c++/7/streambuf /usr/include/c++/7/bits/streambuf.tcc /usr/include/c++/7/bits/basic_ios.h /usr/include/c++/7/bits/locale_facets.h /usr/include/c++/7/cwctype /usr/include/wctype.h /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_base.h /usr/include/c++/7/bits/streambuf_iterator.h /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_inline.h /usr/include/c++/7/bits/locale_facets.tcc /usr/include/c++/7/bits/basic_ios.tcc /usr/include/c++/7/bits/ostream.tcc /usr/include/c++/7/istream /usr/include/c++/7/bits/istream.tcc
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 559):
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-hello_triangle.o -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-hello_triangle.Tpo -c -o LearnOpenGL/main-hello_triangle.o `test -f 'LearnOpenGL/hello_triangle.cpp' || echo '$(srcdir)/'`LearnOpenGL/hello_triangle.cpp
-	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-hello_triangle.Tpo LearnOpenGL/$(DEPDIR)/main-hello_triangle.Po
 
 LearnOpenGL/glad/glad.h:
 #  Implicit rule search has not been done.
@@ -3738,7 +3745,7 @@ LearnOpenGL/glad/glad.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 543):
+#  recipe to execute (from 'Makefile', line 547):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -3933,7 +3940,7 @@ mostlyclean-compile:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 487):
+#  recipe to execute (from 'Makefile', line 491):
 	-rm -f *.$(OBJEXT)
 	-rm -f LearnOpenGL/*.$(OBJEXT)
 
@@ -3976,7 +3983,7 @@ install-binPROGRAMS: main
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 422):
+#  recipe to execute (from 'Makefile', line 426):
 	@$(NORMAL_INSTALL)
 	@list='$(bin_PROGRAMS)'; test -n "$(bindir)" || list=; \
 	if test -n "$$list"; then \
@@ -4047,6 +4054,13 @@ distclean-libtool:
 	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 # Not a target:
+LearnOpenGL/.deps/main-shaders_uniform.Po:
+#  Implicit rule search has been done.
+#  Last modified 2017-09-24 19:04:34.3669672
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
 .txinfo.dvi:
 #  Builtin rule
 #  Implicit rule search has not been done.
@@ -4060,6 +4074,12 @@ distclean-libtool:
 #  Last modified 2017-09-21 18:27:59.23340339
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+LearnOpenGL/shaders_uniform.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 /usr/include/c++/7/bits/streambuf.tcc:
 #  Implicit rule search has not been done.
@@ -4092,7 +4112,7 @@ mostlyclean-libtool:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 573):
+#  recipe to execute (from 'Makefile', line 577):
 	-rm -f *.lo
 
 /usr/include/c++/7/string:
@@ -4195,7 +4215,7 @@ distclean: distclean-am
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 704):
+#  recipe to execute (from 'Makefile', line 708):
 	-rm -rf LearnOpenGL/$(DEPDIR)
 	-rm -f Makefile
 
@@ -4212,12 +4232,6 @@ distclean: distclean-am
 #  File has not been updated.
 #  recipe to execute (built-in):
 	$(COMPILE.m) $(OUTPUT_OPTION) $<
-
-# Not a target:
-LearnOpenGL/hello_triangle.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 /usr/include/c++/7/ext/numeric_traits.h:
 #  Implicit rule search has not been done.
@@ -4351,7 +4365,7 @@ install-exec-am: install-binPROGRAMS
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 497):
+#  recipe to execute (from 'Makefile', line 501):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -4366,7 +4380,7 @@ Makefile: Makefile.in ../config.status
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
-#  Last modified 2017-09-23 01:30:24.012880399
+#  Last modified 2017-09-24 19:34:47.958683588
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4387,7 +4401,7 @@ Makefile: Makefile.in ../config.status
 # ? := Makefile.in
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=10/71=14%
-#  recipe to execute (from 'Makefile', line 405):
+#  recipe to execute (from 'Makefile', line 409):
 	@case '$?' in \
 	  *config.status*) \
 	    cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh;; \
@@ -4408,7 +4422,7 @@ Makefile: Makefile.in ../config.status
 Makefile.in: Makefile.am ../m4/ax_append_compile_flags.m4 ../m4/ax_append_flag.m4 ../m4/ax_check_compile_flag.m4 ../m4/ax_check_link_flag.m4 ../m4/ax_compiler_flags_cxxflags.m4 ../m4/ax_cxx_compile_stdcxx_11.m4 ../m4/ax_require_defined.m4 ../m4/gettext.m4 ../m4/gsettings.m4 ../m4/iconv.m4 ../m4/intlmacosx.m4 ../m4/introspection.m4 ../m4/lib-ld.m4 ../m4/lib-link.m4 ../m4/lib-prefix.m4 ../m4/libtool.m4 ../m4/ltoptions.m4 ../m4/ltsugar.m4 ../m4/ltversion.m4 ../m4/lt~obsolete.m4 ../m4/nls.m4 ../m4/pkg.m4 ../m4/po.m4 ../m4/progtest.m4 ../configure.ac ../aclocal.m4
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
-#  Last modified 2017-09-23 01:30:23.748876312
+#  Last modified 2017-09-24 19:34:47.710679895
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4429,7 +4443,7 @@ Makefile.in: Makefile.am ../m4/ax_append_compile_flags.m4 ../m4/ax_append_flag.m
 # ? := Makefile.am
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=5/55=9%
-#  recipe to execute (from 'Makefile', line 393):
+#  recipe to execute (from 'Makefile', line 397):
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -4464,12 +4478,12 @@ gitignore-clean:
 #  recipe to execute (from '../git.mk', line 331):
 	-rm -f $(srcdir)/.gitignore
 
-distdir: Makefile.am Makefile.in ../build-aux/depcomp LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+distdir: Makefile.am Makefile.in ../build-aux/depcomp LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 631):
+#  recipe to execute (from 'Makefile', line 635):
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	list='$(DISTFILES)'; \
@@ -4500,13 +4514,13 @@ distdir: Makefile.am Makefile.in ../build-aux/depcomp LearnOpenGL/hello_triangle
 	  fi; \
 	done
 
-LearnOpenGL/main-hello_triangle.obj: LearnOpenGL/hello_triangle.cpp
+LearnOpenGL/main-shaders_uniform.o: LearnOpenGL/shaders_uniform.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp LearnOpenGL/shaders_uniform.cpp /usr/include/stdc-predef.h LearnOpenGL/glad/glad.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h /usr/include/KHR/khrplatform.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h /usr/include/x86_64-linux-gnu/bits/wordsize.h /usr/include/x86_64-linux-gnu/gnu/stubs.h /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/inttypes.h /usr/include/GLFW/glfw3.h /usr/include/GL/gl.h /usr/include/c++/7/iostream /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h /usr/include/x86_64-linux-gnu/c++/7/bits/cpu_defines.h /usr/include/c++/7/ostream /usr/include/c++/7/ios /usr/include/c++/7/iosfwd /usr/include/c++/7/bits/stringfwd.h /usr/include/c++/7/bits/memoryfwd.h /usr/include/c++/7/bits/postypes.h /usr/include/c++/7/cwchar /usr/include/wchar.h /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h /usr/include/xlocale.h /usr/include/c++/7/exception /usr/include/c++/7/bits/exception.h /usr/include/c++/7/bits/exception_ptr.h /usr/include/c++/7/bits/exception_defines.h /usr/include/c++/7/bits/cxxabi_init_exception.h /usr/include/c++/7/typeinfo /usr/include/c++/7/bits/hash_bytes.h /usr/include/c++/7/new /usr/include/c++/7/bits/nested_exception.h /usr/include/c++/7/bits/move.h /usr/include/c++/7/bits/concept_check.h /usr/include/c++/7/type_traits /usr/include/c++/7/bits/char_traits.h /usr/include/c++/7/bits/stl_algobase.h /usr/include/c++/7/bits/functexcept.h /usr/include/c++/7/bits/cpp_type_traits.h /usr/include/c++/7/ext/type_traits.h /usr/include/c++/7/ext/numeric_traits.h /usr/include/c++/7/bits/stl_pair.h /usr/include/c++/7/bits/stl_iterator_base_types.h /usr/include/c++/7/bits/stl_iterator_base_funcs.h /usr/include/c++/7/debug/assertions.h /usr/include/c++/7/bits/stl_iterator.h /usr/include/c++/7/bits/ptr_traits.h /usr/include/c++/7/debug/debug.h /usr/include/c++/7/bits/predefined_ops.h /usr/include/c++/7/cstdint /usr/include/c++/7/bits/localefwd.h /usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h /usr/include/c++/7/clocale /usr/include/locale.h /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/7/cctype /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/types.h /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h /usr/include/x86_64-linux-gnu/bits/byteswap.h /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/c++/7/bits/ios_base.h /usr/include/c++/7/ext/atomicity.h /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/sched.h /usr/include/x86_64-linux-gnu/bits/time.h /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/x86_64-linux-gnu/c++/7/bits/atomic_word.h /usr/include/c++/7/bits/locale_classes.h /usr/include/c++/7/string /usr/include/c++/7/bits/allocator.h /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h /usr/include/c++/7/ext/new_allocator.h /usr/include/c++/7/bits/ostream_insert.h /usr/include/c++/7/bits/cxxabi_forced.h /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/backward/binders.h /usr/include/c++/7/bits/range_access.h /usr/include/c++/7/initializer_list /usr/include/c++/7/bits/basic_string.h /usr/include/c++/7/ext/alloc_traits.h /usr/include/c++/7/bits/alloc_traits.h /usr/include/c++/7/ext/string_conversions.h /usr/include/c++/7/cstdlib /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/x86_64-linux-gnu/sys/select.h /usr/include/x86_64-linux-gnu/bits/select.h /usr/include/x86_64-linux-gnu/bits/sigset.h /usr/include/x86_64-linux-gnu/sys/sysmacros.h /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/c++/7/bits/std_abs.h /usr/include/c++/7/cstdio /usr/include/libio.h /usr/include/_G_config.h /usr/include/x86_64-linux-gnu/bits/stdio_lim.h /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/c++/7/cerrno /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h /usr/include/c++/7/bits/functional_hash.h /usr/include/c++/7/bits/basic_string.tcc /usr/include/c++/7/bits/locale_classes.tcc /usr/include/c++/7/system_error /usr/include/x86_64-linux-gnu/c++/7/bits/error_constants.h /usr/include/c++/7/stdexcept /usr/include/c++/7/streambuf /usr/include/c++/7/bits/streambuf.tcc /usr/include/c++/7/bits/basic_ios.h /usr/include/c++/7/bits/locale_facets.h /usr/include/c++/7/cwctype /usr/include/wctype.h /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_base.h /usr/include/c++/7/bits/streambuf_iterator.h /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_inline.h /usr/include/c++/7/bits/locale_facets.tcc /usr/include/c++/7/bits/basic_ios.tcc /usr/include/c++/7/bits/ostream.tcc /usr/include/c++/7/istream /usr/include/c++/7/bits/istream.tcc /usr/include/c++/7/cmath /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h /usr/include/x86_64-linux-gnu/bits/huge_val.h /usr/include/x86_64-linux-gnu/bits/huge_valf.h /usr/include/x86_64-linux-gnu/bits/huge_vall.h /usr/include/x86_64-linux-gnu/bits/inf.h /usr/include/x86_64-linux-gnu/bits/nan.h /usr/include/x86_64-linux-gnu/bits/mathdef.h /usr/include/x86_64-linux-gnu/bits/mathcalls.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 566):
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-hello_triangle.obj -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-hello_triangle.Tpo -c -o LearnOpenGL/main-hello_triangle.obj `if test -f 'LearnOpenGL/hello_triangle.cpp'; then $(CYGPATH_W) 'LearnOpenGL/hello_triangle.cpp'; else $(CYGPATH_W) '$(srcdir)/LearnOpenGL/hello_triangle.cpp'; fi`
-	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-hello_triangle.Tpo LearnOpenGL/$(DEPDIR)/main-hello_triangle.Po
+#  recipe to execute (from 'Makefile', line 563):
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-shaders_uniform.o -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-shaders_uniform.Tpo -c -o LearnOpenGL/main-shaders_uniform.o `test -f 'LearnOpenGL/shaders_uniform.cpp' || echo '$(srcdir)/'`LearnOpenGL/shaders_uniform.cpp
+	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-shaders_uniform.Tpo LearnOpenGL/$(DEPDIR)/main-shaders_uniform.Po
 
 /usr/include/locale.h:
 #  Implicit rule search has not been done.
@@ -4597,7 +4611,7 @@ LearnOpenGL/glad.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 513):
+#  recipe to execute (from 'Makefile', line 517):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
@@ -4622,12 +4636,12 @@ LearnOpenGL/glad.c:
 #  Modification time never checked.
 #  File has not been updated.
 
-tags-am: LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+tags-am: LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 584):
+#  recipe to execute (from 'Makefile', line 588):
 	set x; \
 	here=`pwd`; \
 	$(am__define_uniq_tagged_files); \
@@ -4653,7 +4667,7 @@ LearnOpenGL/.deps/.dirstamp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 474):
+#  recipe to execute (from 'Makefile', line 478):
 	@$(MKDIR_P) LearnOpenGL/$(DEPDIR)
 	@: > LearnOpenGL/$(DEPDIR)/$(am__dirstamp)
 
@@ -4716,6 +4730,11 @@ mostlyclean-am: mostlyclean-compile mostlyclean-generic mostlyclean-libtool
 #  Modification time never checked.
 #  File has not been updated.
 
+/usr/include/x86_64-linux-gnu/bits/huge_valf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 /usr/include/c++/7/bits/stl_iterator_base_types.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -4743,7 +4762,7 @@ clean-binPROGRAMS:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 463):
+#  recipe to execute (from 'Makefile', line 467):
 	@list='$(bin_PROGRAMS)'; test -n "$$list" || exit 0; \
 	echo " rm -f" $$list; \
 	rm -f $$list || exit $$?; \
@@ -4765,6 +4784,11 @@ clean-binPROGRAMS:
 #  File has not been updated.
 
 /usr/include/c++/7/bits/nested_exception.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/usr/include/x86_64-linux-gnu/bits/mathdef.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -4844,7 +4868,7 @@ LearnOpenGL/main-glad.o: LearnOpenGL/glad.c LearnOpenGL/.dirstamp LearnOpenGL/.d
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 521):
+#  recipe to execute (from 'Makefile', line 525):
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT LearnOpenGL/main-glad.o -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-glad.Tpo -c -o LearnOpenGL/main-glad.o `test -f 'LearnOpenGL/glad.c' || echo '$(srcdir)/'`LearnOpenGL/glad.c
 	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-glad.Tpo LearnOpenGL/$(DEPDIR)/main-glad.Po
 
@@ -4950,7 +4974,7 @@ maintainer-clean-generic:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 697):
+#  recipe to execute (from 'Makefile', line 701):
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
 
@@ -5057,7 +5081,7 @@ maintainer-clean-generic:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 551):
+#  recipe to execute (from 'Makefile', line 555):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
@@ -5155,7 +5179,7 @@ clean-libtool:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 576):
+#  recipe to execute (from 'Makefile', line 580):
 	-rm -rf .libs _libs
 
 /usr/include/c++/7/cstdio:
@@ -5168,11 +5192,11 @@ clean-libtool:
 #  Modification time never checked.
 #  File has not been updated.
 
-ID: LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+ID: LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 579):
+#  recipe to execute (from 'Makefile', line 583):
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
 
 ../m4/ax_compiler_flags_cxxflags.m4:
@@ -5208,6 +5232,11 @@ git-mk-install:
 			fi; \
 	fi; done; test -z "$$any_failed"
 
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 ../m4/progtest.m4:
 #  Implicit rule search has been done.
 #  Last modified 2017-09-21 17:55:37.356098635
@@ -5219,12 +5248,17 @@ git-mk-install:
 #  Modification time never checked.
 #  File has not been updated.
 
+/usr/include/x86_64-linux-gnu/bits/huge_val.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 uninstall-binPROGRAMS:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 452):
+#  recipe to execute (from 'Makefile', line 456):
 	@$(NORMAL_UNINSTALL)
 	@list='$(bin_PROGRAMS)'; test -n "$(bindir)" || list=; \
 	files=`for p in $$list; do echo "$$p"; done | \
@@ -5256,7 +5290,7 @@ uninstall-binPROGRAMS:
 #  Last modified 2017-09-21 18:28:04.645533691
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 419):
+#  recipe to execute (from 'Makefile', line 423):
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
 # Not a target:
@@ -5272,7 +5306,7 @@ uninstall-binPROGRAMS:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 535):
+#  recipe to execute (from 'Makefile', line 539):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -5334,7 +5368,7 @@ distclean-generic:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 691):
+#  recipe to execute (from 'Makefile', line 695):
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
 	-rm -f LearnOpenGL/$(DEPDIR)/$(am__dirstamp)
@@ -5361,7 +5395,7 @@ distclean-generic:
 # Not a target:
 Makefile.am:
 #  Implicit rule search has been done.
-#  Last modified 2017-09-23 01:30:20.600827566
+#  Last modified 2017-09-24 19:34:45.614648687
 #  File has been updated.
 #  Successfully updated.
 
@@ -5377,8 +5411,13 @@ Makefile.am:
 #  Last modified 2017-09-21 18:28:05.441552873
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 417):
+#  recipe to execute (from 'Makefile', line 421):
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 ../m4/ax_append_compile_flags.m4:
 #  Implicit rule search has been done.
@@ -5415,12 +5454,13 @@ install-data-am:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-LearnOpenGL/.deps/main-hello_triangle.Po:
-#  Implicit rule search has been done.
-#  Last modified 2017-09-23 01:18:24.785512475
-#  File has been updated.
-#  Successfully updated.
+LearnOpenGL/main-shaders_uniform.obj: LearnOpenGL/shaders_uniform.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 570):
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-shaders_uniform.obj -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-shaders_uniform.Tpo -c -o LearnOpenGL/main-shaders_uniform.obj `if test -f 'LearnOpenGL/shaders_uniform.cpp'; then $(CYGPATH_W) 'LearnOpenGL/shaders_uniform.cpp'; else $(CYGPATH_W) '$(srcdir)/LearnOpenGL/shaders_uniform.cpp'; fi`
+	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-shaders_uniform.Tpo LearnOpenGL/$(DEPDIR)/main-shaders_uniform.Po
 
 html: html-am
 #  Phony target (prerequisite of .PHONY).
@@ -5474,7 +5514,7 @@ install-strip:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 677):
+#  recipe to execute (from 'Makefile', line 681):
 	if test -z '$(STRIP)'; then \
 	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
 	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \
@@ -5557,6 +5597,11 @@ mostlyclean-generic:
 #  Modification time never checked.
 #  File has not been updated.
 
+/usr/include/x86_64-linux-gnu/bits/huge_vall.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 /usr/include/c++/7/bits/concept_check.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -5589,11 +5634,11 @@ html-am:
 #  File does not exist.
 #  File has not been updated.
 
-main: LearnOpenGL/main-hello_triangle.o LearnOpenGL/main-glad.o
+main: LearnOpenGL/main-shaders_uniform.o LearnOpenGL/main-glad.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 483):
+#  recipe to execute (from 'Makefile', line 487):
 	@rm -f main$(EXEEXT)
 	$(AM_V_CXXLD)$(main_LINK) $(main_OBJECTS) $(main_LDADD) $(LIBS)
 
@@ -5668,6 +5713,11 @@ git-mk-update:
 #  File has not been updated.
 #  recipe to execute (from '../git.mk', line 155):
 	wget $(GIT_MK_URL) -O $(top_srcdir)/git.mk
+
+/usr/include/x86_64-linux-gnu/bits/nan.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .F.f:
@@ -5774,7 +5824,7 @@ LearnOpenGL/main-glad.obj: LearnOpenGL/glad.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 528):
+#  recipe to execute (from 'Makefile', line 532):
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT LearnOpenGL/main-glad.obj -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-glad.Tpo -c -o LearnOpenGL/main-glad.obj `if test -f 'LearnOpenGL/glad.c'; then $(CYGPATH_W) 'LearnOpenGL/glad.c'; else $(CYGPATH_W) '$(srcdir)/LearnOpenGL/glad.c'; fi`
 	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-glad.Tpo LearnOpenGL/$(DEPDIR)/main-glad.Po
 
@@ -5813,21 +5863,26 @@ check: check-am
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 505):
+#  recipe to execute (from 'Makefile', line 509):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
 
-ctags-am: LearnOpenGL/hello_triangle.cpp LearnOpenGL/glad.c
+ctags-am: LearnOpenGL/shaders_uniform.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 602):
+#  recipe to execute (from 'Makefile', line 606):
 	$(am__define_uniq_tagged_files); \
 	test -z "$(CTAGS_ARGS)$$unique" \
 	  || $(CTAGS) $(CTAGSFLAGS) $(AM_CTAGSFLAGS) $(CTAGS_ARGS) \
 	     $$unique
+
+/usr/include/math.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 clean-generic:
 #  Phony target (prerequisite of .PHONY).
@@ -5845,7 +5900,7 @@ clean-generic:
 #  Last modified 2017-09-23 01:18:02.709151698
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 414):
+#  recipe to execute (from 'Makefile', line 418):
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
 /usr/include/c++/7/bits/stl_algobase.h:
@@ -5880,7 +5935,7 @@ installdirs:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 664):
+#  recipe to execute (from 'Makefile', line 668):
 	for dir in "$(DESTDIR)$(bindir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
 	done
@@ -6049,27 +6104,27 @@ install-ps-am:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=349/1024=34%, Rehash=0, Collisions=842/2063=41%
+# Load=360/1024=35%, Rehash=0, Collisions=894/2096=43%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 5 (4) / strings = 1424 / storage = 33884 B / avg = 23 B
-# current buf: size = 8162 B / used = 1288 B / count = 59 / avg = 21 B
-# other used: total = 25722 B / count = 1365 / avg = 18 B
-# other free: total = 52 B / max = 19 B / min = 4 B / avg = 13 B
+# strcache buffers: 5 (4) / strings = 1437 / storage = 34442 B / avg = 23 B
+# current buf: size = 8162 B / used = 1828 B / count = 89 / avg = 20 B
+# other used: total = 26280 B / count = 1348 / avg = 19 B
+# other free: total = 34 B / max = 18 B / min = 1 B / avg = 8 B
 
-# strcache performance: lookups = 2442 / hit rate = 41%
+# strcache performance: lookups = 2477 / hit rate = 41%
 # hash-table stats:
-# Load=1424/8192=17%, Rehash=0, Collisions=285/2442=12%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Load=1437/8192=18%, Rehash=0, Collisions=285/2477=12%
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
-echo "  CXX     " LearnOpenGL/main-hello_triangle_indexed.o;g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/SDL2 -D_REENTRANT `pkg-config SDL2_image --cflags` -I/usr/include/freetype2 `pkg-config --cflags gl` `pkg-config --cflags glu`     -MT LearnOpenGL/main-hello_triangle_indexed.o -MD -MP -MF LearnOpenGL/.deps/main-hello_triangle_indexed.Tpo -c -o LearnOpenGL/main-hello_triangle_indexed.o `test -f 'LearnOpenGL/hello_triangle_indexed.cpp' || echo './'`LearnOpenGL/hello_triangle_indexed.cpp
-mv -f LearnOpenGL/.deps/main-hello_triangle_indexed.Tpo LearnOpenGL/.deps/main-hello_triangle_indexed.Po
+echo "  CXX     " LearnOpenGL/main-shaders_interpolation.o;g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include/SDL2 -D_REENTRANT `pkg-config SDL2_image --cflags` -I/usr/include/freetype2 `pkg-config --cflags gl` `pkg-config --cflags glu`     -MT LearnOpenGL/main-shaders_interpolation.o -MD -MP -MF LearnOpenGL/.deps/main-shaders_interpolation.Tpo -c -o LearnOpenGL/main-shaders_interpolation.o `test -f 'LearnOpenGL/shaders_interpolation.cpp' || echo './'`LearnOpenGL/shaders_interpolation.cpp
+mv -f LearnOpenGL/.deps/main-shaders_interpolation.Tpo LearnOpenGL/.deps/main-shaders_interpolation.Po
 rm -f main
-echo "  CXXLD   " main;/bin/bash ../libtool --silent --tag=CXX   --mode=link g++    `pkg-config SDL2_image --libs` -L/usr/lib/x86_64-linux-gnu -lSDL2 -lGLEW -lGL -lglfw -lglut `pkg-config --libs gl` `pkg-config --libs glu` `pkg-config --libs fftw3` -lSDL -lSDL_mixer -lpthread -lasound -lm -lGLEW -lGL -lfreetype -ldl -o main LearnOpenGL/main-hello_triangle_indexed.o LearnOpenGL/main-glad.o  
+echo "  CXXLD   " main;/bin/bash ../libtool --silent --tag=CXX   --mode=link g++    `pkg-config SDL2_image --libs` -L/usr/lib/x86_64-linux-gnu -lSDL2 -lGLEW -lGL -lglfw -lglut `pkg-config --libs gl` `pkg-config --libs glu` `pkg-config --libs fftw3` -lSDL -lSDL_mixer -lpthread -lasound -lm -lGLEW -lGL -lfreetype -ldl -o main LearnOpenGL/main-shaders_interpolation.o LearnOpenGL/main-glad.o  
 echo "git.mk: Generating .gitignore"
 { \
 	if test "x" = x -o "x" = x; then :; else \
@@ -6230,7 +6285,7 @@ done
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:48 2017
 
 # Variables
 
@@ -6262,7 +6317,7 @@ CWEAVE = cweave
 CPPFLAGS = -I/usr/include/freetype2 `pkg-config --cflags gl` `pkg-config --cflags glu` $(sdl2-config --cflags) $(EXTRA_CPPFLAGS)
 # makefile (from 'Makefile', line 255)
 INSTALL = /usr/bin/install -c
-# makefile (from 'Makefile', line 389)
+# makefile (from 'Makefile', line 391)
 main_LDFLAGS = $(sdl2-config --libs) `pkg-config SDL2_image --libs`
 # makefile (from 'Makefile', line 232)
 DEFS = -DHAVE_CONFIG_H
@@ -6323,7 +6378,7 @@ INSTALL_SCRIPT = ${INSTALL}
 # makefile (from 'Makefile', line 298)
 OPENGL2_LIBS = -lgio-2.0 -lgobject-2.0 -lglib-2.0
 # makefile (from '../git.mk', line 1)
-MAKEFILE_LIST :=  Makefile LearnOpenGL/.deps/main-glad.Po LearnOpenGL/.deps/main-hello_triangle_indexed.Po ../git.mk
+MAKEFILE_LIST :=  Makefile LearnOpenGL/.deps/main-glad.Po LearnOpenGL/.deps/main-shaders_interpolation.Po ../git.mk
 # makefile (from 'Makefile', line 346)
 builddir = .
 # makefile (from 'Makefile', line 345)
@@ -6364,7 +6419,7 @@ API_VERSION = 0
 am__make_running_with_option = case $${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '$${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$$MAKEFLAGS; if $(am__is_gnu_make); then sane_makeflags=$$MFLAGS; else case $$MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$$MAKEFLAGS" | sed "s/$$bs$$bs[$$bs $$bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$$flg" | sed "s/$$1.*$$//"`; }; for flg in $$sane_makeflags; do test $$skip_next = yes && { skip_next=no; continue; }; case $$flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $$flg in *$$target_option*) has_opt=yes; break;; esac; done; test $$has_opt = yes
 # makefile (from 'Makefile', line 222)
 CC = gcc
-# makefile (from 'Makefile', line 390)
+# makefile (from 'Makefile', line 392)
 EXTRA_LDLIBS = -lGL
 # makefile (from 'Makefile', line 115)
 CONFIG_CLEAN_FILES = 
@@ -6610,7 +6665,7 @@ GITIGNORE_MAINTAINERCLEANFILES_MAKEFILE_IN = `cd $(top_srcdir); $(AUTOCONF) --tr
 top_build_prefix = ../
 # makefile (from 'Makefile', line 72)
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-# makefile (from 'Makefile', line 388)
+# makefile (from 'Makefile', line 390)
 main_CPPFLAGS = -I/usr/include/SDL2 -D_REENTRANT `pkg-config SDL2_image --cflags`
 # makefile (from 'Makefile', line 93)
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -6682,8 +6737,8 @@ AS = as
 sharedstatedir = ${prefix}/com
 # default
 PREPROCESS.S = $(CC) -E $(CPPFLAGS)
-# makefile (from 'Makefile', line 387)
-main_SOURCES = LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+# makefile (from 'Makefile', line 389)
+main_SOURCES = LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 # default
 COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
 # default
@@ -6721,7 +6776,7 @@ host_os = linux-gnu
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # makefile (from 'Makefile', line 120)
-am_main_OBJECTS = LearnOpenGL/main-hello_triangle_indexed.$(OBJEXT) LearnOpenGL/main-glad.$(OBJEXT)
+am_main_OBJECTS = LearnOpenGL/main-shaders_interpolation.$(OBJEXT) LearnOpenGL/main-glad.$(OBJEXT)
 # makefile (from 'Makefile', line 228)
 CXXCPP = g++ -E
 # makefile (from 'Makefile', line 174)
@@ -6990,18 +7045,18 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 # SCCS: could not be stat'd.
 # . (device 2049, inode 2756965): 19 files, 4 impossibilities.
 # ../m4/SCCS: could not be stat'd.
-# LearnOpenGL (device 2049, inode 3148759): 12 files, 1 impossibilities.
+# LearnOpenGL (device 2049, inode 3148759): 16 files, 1 impossibilities.
 # ../m4/RCS: could not be stat'd.
 # ../SCCS: could not be stat'd.
 # LearnOpenGL/SCCS: could not be stat'd.
 # ../RCS: could not be stat'd.
 # LearnOpenGL/RCS: could not be stat'd.
-# LearnOpenGL/.deps (device 2049, inode 3148764): 7 files, 8 impossibilities.
+# LearnOpenGL/.deps (device 2049, inode 3148764): 9 files, 8 impossibilities.
 # .. (device 2049, inode 2756962): 31 files, 8 impossibilities.
 # LearnOpenGL/.deps/SCCS: could not be stat'd.
 # RCS: could not be stat'd.
 
-# 125 files, 117 impossibilities in 15 directories.
+# 131 files, 117 impossibilities in 15 directories.
 
 # Implicit Rules
 
@@ -7012,19 +7067,19 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 %.lo: %.c
-#  recipe to execute (from 'Makefile', line 516):
+#  recipe to execute (from 'Makefile', line 518):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
 
 %.o: %.c
-#  recipe to execute (from 'Makefile', line 500):
+#  recipe to execute (from 'Makefile', line 502):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
 
 %.obj: %.c
-#  recipe to execute (from 'Makefile', line 508):
+#  recipe to execute (from 'Makefile', line 510):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -7036,19 +7091,19 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 %.lo: %.cpp
-#  recipe to execute (from 'Makefile', line 554):
+#  recipe to execute (from 'Makefile', line 556):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
 
 %.o: %.cpp
-#  recipe to execute (from 'Makefile', line 538):
+#  recipe to execute (from 'Makefile', line 540):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
 
 %.obj: %.cpp
-#  recipe to execute (from 'Makefile', line 546):
+#  recipe to execute (from 'Makefile', line 548):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -7104,12 +7159,12 @@ GSETTINGS_DISABLE_SCHEMAS_COMPILE =
 
 # Files
 
-cscopelist-am: LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+cscopelist-am: LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 617):
+#  recipe to execute (from 'Makefile', line 619):
 	list='$(am__tagged_files)'; \
 	case "$(srcdir)" in \
 	  [\\/]* | ?:[\\/]*) sdir="$(srcdir)" ;; \
@@ -7148,7 +7203,7 @@ maintainer-clean: maintainer-clean-am gitignore-clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 753):
+#  recipe to execute (from 'Makefile', line 755):
 	-rm -rf LearnOpenGL/$(DEPDIR)
 	-rm -f Makefile
 
@@ -7168,7 +7223,7 @@ distclean-compile:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 494):
+#  recipe to execute (from 'Makefile', line 496):
 	-rm -f *.tab.c
 
 install-dvi-am:
@@ -7182,7 +7237,7 @@ GTAGS:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 611):
+#  recipe to execute (from 'Makefile', line 613):
 	here=`$(am__cd) $(top_builddir) && pwd` \
 	  && $(am__cd) $(top_srcdir) \
 	  && gtags -i $(GTAGS_ARGS) "$$here"
@@ -7192,7 +7247,7 @@ LearnOpenGL/.dirstamp:
 #  Last modified 2017-09-22 20:32:19.837934968
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 474):
+#  recipe to execute (from 'Makefile', line 476):
 	@$(MKDIR_P) LearnOpenGL
 	@: > LearnOpenGL/$(am__dirstamp)
 
@@ -7211,7 +7266,7 @@ distclean-tags:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 631):
+#  recipe to execute (from 'Makefile', line 633):
 	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
 
 info-am:
@@ -7232,7 +7287,7 @@ install-am: all-am
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 676):
+#  recipe to execute (from 'Makefile', line 678):
 	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -7271,7 +7326,7 @@ pdf: pdf-am
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 546):
+#  recipe to execute (from 'Makefile', line 548):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -7489,7 +7544,7 @@ mostlyclean-compile:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 490):
+#  recipe to execute (from 'Makefile', line 492):
 	-rm -f *.$(OBJEXT)
 	-rm -f LearnOpenGL/*.$(OBJEXT)
 
@@ -7527,7 +7582,7 @@ install-binPROGRAMS: main
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 425):
+#  recipe to execute (from 'Makefile', line 427):
 	@$(NORMAL_INSTALL)
 	@list='$(bin_PROGRAMS)'; test -n "$(bindir)" || list=; \
 	if test -n "$$list"; then \
@@ -7562,12 +7617,11 @@ install-binPROGRAMS: main
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-LearnOpenGL/hello_triangle_indexed.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2017-09-23 01:29:28.248016137
-#  File has been updated.
-#  Successfully updated.
+distclean-libtool:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
 
 # Not a target:
 .p.o:
@@ -7657,7 +7711,7 @@ mostlyclean-libtool:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 576):
+#  recipe to execute (from 'Makefile', line 578):
 	-rm -f *.lo
 
 # Not a target:
@@ -7749,7 +7803,7 @@ distclean: distclean-am
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 707):
+#  recipe to execute (from 'Makefile', line 709):
 	-rm -rf LearnOpenGL/$(DEPDIR)
 	-rm -f Makefile
 
@@ -7761,14 +7815,6 @@ distclean: distclean-am
 #  File has not been updated.
 #  recipe to execute (built-in):
 	$(COMPILE.m) $(OUTPUT_OPTION) $<
-
-LearnOpenGL/main-hello_triangle_indexed.obj: LearnOpenGL/hello_triangle_indexed.cpp
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 569):
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-hello_triangle_indexed.obj -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-hello_triangle_indexed.Tpo -c -o LearnOpenGL/main-hello_triangle_indexed.obj `if test -f 'LearnOpenGL/hello_triangle_indexed.cpp'; then $(CYGPATH_W) 'LearnOpenGL/hello_triangle_indexed.cpp'; else $(CYGPATH_W) '$(srcdir)/LearnOpenGL/hello_triangle_indexed.cpp'; fi`
-	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-hello_triangle_indexed.Tpo LearnOpenGL/$(DEPDIR)/main-hello_triangle_indexed.Po
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 #  Implicit rule search has not been done.
@@ -7832,11 +7878,12 @@ install-dvi: install-dvi-am
 #  File has been updated.
 #  Successfully updated.
 
-tags: tags-am
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+# Not a target:
+LearnOpenGL/.deps/main-shaders_interpolation.Po:
+#  Implicit rule search has been done.
+#  Last modified 2017-09-24 19:34:47.986684004
+#  File has been updated.
+#  Successfully updated.
 
 uninstall: uninstall-am
 #  Phony target (prerequisite of .PHONY).
@@ -7860,11 +7907,18 @@ install-exec-am: install-binPROGRAMS
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+LearnOpenGL/shaders_interpolation.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2017-09-24 19:34:17.938237081
+#  File has been updated.
+#  Successfully updated.
+
 .c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 500):
+#  recipe to execute (from 'Makefile', line 502):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -7878,10 +7932,10 @@ info: info-am
 Makefile: Makefile.in ../config.status
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has not been done.
-#  Last modified 2017-09-23 01:30:24.012880399
+#  Last modified 2017-09-24 19:34:47.958683588
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 408):
+#  recipe to execute (from 'Makefile', line 410):
 	@case '$?' in \
 	  *config.status*) \
 	    cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh;; \
@@ -7901,10 +7955,10 @@ Makefile: Makefile.in ../config.status
 
 Makefile.in: Makefile.am ../m4/ax_append_compile_flags.m4 ../m4/ax_append_flag.m4 ../m4/ax_check_compile_flag.m4 ../m4/ax_check_link_flag.m4 ../m4/ax_compiler_flags_cxxflags.m4 ../m4/ax_cxx_compile_stdcxx_11.m4 ../m4/ax_require_defined.m4 ../m4/gettext.m4 ../m4/gsettings.m4 ../m4/iconv.m4 ../m4/intlmacosx.m4 ../m4/introspection.m4 ../m4/lib-ld.m4 ../m4/lib-link.m4 ../m4/lib-prefix.m4 ../m4/libtool.m4 ../m4/ltoptions.m4 ../m4/ltsugar.m4 ../m4/ltversion.m4 ../m4/lt~obsolete.m4 ../m4/nls.m4 ../m4/pkg.m4 ../m4/po.m4 ../m4/progtest.m4 ../configure.ac ../aclocal.m4
 #  Implicit rule search has not been done.
-#  Last modified 2017-09-23 01:30:23.748876312
+#  Last modified 2017-09-24 19:34:47.710679895
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 396):
+#  recipe to execute (from 'Makefile', line 398):
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -8004,17 +8058,17 @@ LearnOpenGL/glad.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 516):
+#  recipe to execute (from 'Makefile', line 518):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
 
-tags-am: LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+tags-am: LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 587):
+#  recipe to execute (from 'Makefile', line 589):
 	set x; \
 	here=`pwd`; \
 	$(am__define_uniq_tagged_files); \
@@ -8041,7 +8095,7 @@ LearnOpenGL/.deps/.dirstamp:
 #  Last modified 2017-09-22 20:32:19.837934968
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 477):
+#  recipe to execute (from 'Makefile', line 479):
 	@$(MKDIR_P) LearnOpenGL/$(DEPDIR)
 	@: > LearnOpenGL/$(DEPDIR)/$(am__dirstamp)
 
@@ -8100,12 +8154,40 @@ mostlyclean-am: mostlyclean-compile mostlyclean-generic mostlyclean-libtool
 #  File has been updated.
 #  Successfully updated.
 
+LearnOpenGL/main-shaders_interpolation.o: LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'LearnOpenGL/main-shaders_interpolation'
+#  Last modified 2514-05-30 03:53:03.107374182
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := LearnOpenGL/main-shaders_interpolation.o
+# automatic
+# % := 
+# automatic
+# * := LearnOpenGL/main-shaders_interpolation
+# automatic
+# + := LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
+# automatic
+# | := 
+# automatic
+# < := LearnOpenGL/shaders_interpolation.cpp
+# automatic
+# ^ := LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
+# automatic
+# ? := LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/37=3%
+#  recipe to execute (from 'Makefile', line 564):
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-shaders_interpolation.o -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-shaders_interpolation.Tpo -c -o LearnOpenGL/main-shaders_interpolation.o `test -f 'LearnOpenGL/shaders_interpolation.cpp' || echo '$(srcdir)/'`LearnOpenGL/shaders_interpolation.cpp
+	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-shaders_interpolation.Tpo LearnOpenGL/$(DEPDIR)/main-shaders_interpolation.Po
+
 clean-binPROGRAMS:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 466):
+#  recipe to execute (from 'Makefile', line 468):
 	@list='$(bin_PROGRAMS)'; test -n "$$list" || exit 0; \
 	echo " rm -f" $$list; \
 	rm -f $$list || exit $$?; \
@@ -8121,11 +8203,11 @@ clean-binPROGRAMS:
 #  Modification time never checked.
 #  File has not been updated.
 
-ID: LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+ID: LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 582):
+#  recipe to execute (from 'Makefile', line 584):
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
 
 # Not a target:
@@ -8189,7 +8271,7 @@ LearnOpenGL/main-glad.o: LearnOpenGL/glad.c LearnOpenGL/.dirstamp LearnOpenGL/.d
 #  Last modified 2017-09-22 21:44:32.75065688
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 524):
+#  recipe to execute (from 'Makefile', line 526):
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT LearnOpenGL/main-glad.o -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-glad.Tpo -c -o LearnOpenGL/main-glad.o `test -f 'LearnOpenGL/glad.c' || echo '$(srcdir)/'`LearnOpenGL/glad.c
 	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-glad.Tpo LearnOpenGL/$(DEPDIR)/main-glad.Po
 
@@ -8280,7 +8362,7 @@ maintainer-clean-generic:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 700):
+#  recipe to execute (from 'Makefile', line 702):
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
 
@@ -8327,12 +8409,6 @@ maintainer-clean-generic:
 #  File has been updated.
 #  Successfully updated.
 
-distclean-libtool:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
 ../m4/lib-ld.m4:
 #  Implicit rule search has been done.
 #  Last modified 2017-09-21 17:55:37.272096123
@@ -8373,7 +8449,7 @@ distclean-libtool:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 554):
+#  recipe to execute (from 'Makefile', line 556):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.lo$$||'`;\
 	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Plo
@@ -8446,7 +8522,7 @@ clean-libtool:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 579):
+#  recipe to execute (from 'Makefile', line 581):
 	-rm -rf .libs _libs
 
 installcheck: installcheck-am
@@ -8499,7 +8575,7 @@ uninstall-binPROGRAMS:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 455):
+#  recipe to execute (from 'Makefile', line 457):
 	@$(NORMAL_UNINSTALL)
 	@list='$(bin_PROGRAMS)'; test -n "$(bindir)" || list=; \
 	files=`for p in $$list; do echo "$$p"; done | \
@@ -8509,13 +8585,6 @@ uninstall-binPROGRAMS:
 	test -n "$$list" || exit 0; \
 	echo " ( cd '$(DESTDIR)$(bindir)' && rm -f" $$files ")"; \
 	cd "$(DESTDIR)$(bindir)" && rm -f $$files
-
-# Not a target:
-LearnOpenGL/.deps/main-hello_triangle_indexed.Po:
-#  Implicit rule search has been done.
-#  Last modified 2017-09-23 01:30:24.036880771
-#  File has been updated.
-#  Successfully updated.
 
 ../m4/iconv.m4:
 #  Implicit rule search has been done.
@@ -8528,7 +8597,7 @@ LearnOpenGL/.deps/main-hello_triangle_indexed.Po:
 #  Last modified 2017-09-21 18:28:04.645533691
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 422):
+#  recipe to execute (from 'Makefile', line 424):
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
 # Not a target:
@@ -8544,7 +8613,7 @@ LearnOpenGL/.deps/main-hello_triangle_indexed.Po:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 538):
+#  recipe to execute (from 'Makefile', line 540):
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ $< &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
@@ -8596,7 +8665,7 @@ distclean-generic:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 694):
+#  recipe to execute (from 'Makefile', line 696):
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
 	-rm -f LearnOpenGL/$(DEPDIR)/$(am__dirstamp)
@@ -8618,7 +8687,7 @@ distclean-generic:
 # Not a target:
 Makefile.am:
 #  Implicit rule search has been done.
-#  Last modified 2017-09-23 01:30:20.600827566
+#  Last modified 2017-09-24 19:34:45.614648687
 #  File has been updated.
 #  Successfully updated.
 
@@ -8634,7 +8703,7 @@ Makefile.am:
 #  Last modified 2017-09-21 18:28:05.441552873
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 420):
+#  recipe to execute (from 'Makefile', line 422):
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
 ../m4/ax_append_compile_flags.m4:
@@ -8697,7 +8766,7 @@ install-strip:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 680):
+#  recipe to execute (from 'Makefile', line 682):
 	if test -z '$(STRIP)'; then \
 	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
 	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \
@@ -8755,33 +8824,11 @@ mostlyclean-generic:
 	cat $< >$@ 
 	 chmod a+x $@
 
-LearnOpenGL/main-hello_triangle_indexed.o: LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
+tags: tags-am
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: 'LearnOpenGL/main-hello_triangle_indexed'
-#  Last modified 2514-05-30 03:53:03.107374182
-#  File has been updated.
-#  Successfully updated.
-# automatic
-# @ := LearnOpenGL/main-hello_triangle_indexed.o
-# automatic
-# % := 
-# automatic
-# * := LearnOpenGL/main-hello_triangle_indexed
-# automatic
-# + := LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
-# automatic
-# | := 
-# automatic
-# < := LearnOpenGL/hello_triangle_indexed.cpp
-# automatic
-# ^ := LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
-# automatic
-# ? := LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/.dirstamp LearnOpenGL/.deps/.dirstamp
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/37=3%
-#  recipe to execute (from 'Makefile', line 562):
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-hello_triangle_indexed.o -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-hello_triangle_indexed.Tpo -c -o LearnOpenGL/main-hello_triangle_indexed.o `test -f 'LearnOpenGL/hello_triangle_indexed.cpp' || echo '$(srcdir)/'`LearnOpenGL/hello_triangle_indexed.cpp
-	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-hello_triangle_indexed.Tpo LearnOpenGL/$(DEPDIR)/main-hello_triangle_indexed.Po
+#  File does not exist.
+#  File has not been updated.
 
 /usr/include/x86_64-linux-gnu/bits/sigset.h:
 #  Implicit rule search has not been done.
@@ -8805,7 +8852,7 @@ html-am:
 #  File does not exist.
 #  File has not been updated.
 
-main: LearnOpenGL/main-hello_triangle_indexed.o LearnOpenGL/main-glad.o
+main: LearnOpenGL/main-shaders_interpolation.o LearnOpenGL/main-glad.o
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  Last modified 2514-05-30 03:53:03.107374182
@@ -8818,18 +8865,18 @@ main: LearnOpenGL/main-hello_triangle_indexed.o LearnOpenGL/main-glad.o
 # automatic
 # * := 
 # automatic
-# + := LearnOpenGL/main-hello_triangle_indexed.o LearnOpenGL/main-glad.o
+# + := LearnOpenGL/main-shaders_interpolation.o LearnOpenGL/main-glad.o
 # automatic
 # | := 
 # automatic
-# < := LearnOpenGL/main-hello_triangle_indexed.o
+# < := LearnOpenGL/main-shaders_interpolation.o
 # automatic
-# ^ := LearnOpenGL/main-hello_triangle_indexed.o LearnOpenGL/main-glad.o
+# ^ := LearnOpenGL/main-shaders_interpolation.o LearnOpenGL/main-glad.o
 # automatic
-# ? := LearnOpenGL/main-hello_triangle_indexed.o
+# ? := LearnOpenGL/main-shaders_interpolation.o
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=5/75=7%
-#  recipe to execute (from 'Makefile', line 486):
+#  recipe to execute (from 'Makefile', line 488):
 	@rm -f main$(EXEEXT)
 	$(AM_V_CXXLD)$(main_LINK) $(main_OBJECTS) $(main_LDADD) $(LIBS)
 
@@ -8866,6 +8913,14 @@ main: LearnOpenGL/main-hello_triangle_indexed.o LearnOpenGL/main-glad.o
 #  File has not been updated.
 #  recipe to execute (built-in):
 	$(COMPILE.mod) -o $@ -e $@ $^
+
+LearnOpenGL/main-shaders_interpolation.obj: LearnOpenGL/shaders_interpolation.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 571):
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT LearnOpenGL/main-shaders_interpolation.obj -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-shaders_interpolation.Tpo -c -o LearnOpenGL/main-shaders_interpolation.obj `if test -f 'LearnOpenGL/shaders_interpolation.cpp'; then $(CYGPATH_W) 'LearnOpenGL/shaders_interpolation.cpp'; else $(CYGPATH_W) '$(srcdir)/LearnOpenGL/shaders_interpolation.cpp'; fi`
+	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-shaders_interpolation.Tpo LearnOpenGL/$(DEPDIR)/main-shaders_interpolation.Po
 
 mostlyclean: mostlyclean-am
 #  Phony target (prerequisite of .PHONY).
@@ -8980,7 +9035,7 @@ LearnOpenGL/main-glad.obj: LearnOpenGL/glad.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 531):
+#  recipe to execute (from 'Makefile', line 533):
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(main_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT LearnOpenGL/main-glad.obj -MD -MP -MF LearnOpenGL/$(DEPDIR)/main-glad.Tpo -c -o LearnOpenGL/main-glad.obj `if test -f 'LearnOpenGL/glad.c'; then $(CYGPATH_W) 'LearnOpenGL/glad.c'; else $(CYGPATH_W) '$(srcdir)/LearnOpenGL/glad.c'; fi`
 	$(AM_V_at)$(am__mv) LearnOpenGL/$(DEPDIR)/main-glad.Tpo LearnOpenGL/$(DEPDIR)/main-glad.Po
 
@@ -8999,17 +9054,17 @@ check: check-am
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 508):
+#  recipe to execute (from 'Makefile', line 510):
 	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.obj$$||'`;\
 	$(COMPILE) -MT $@ -MD -MP -MF $$depbase.Tpo -c -o $@ `$(CYGPATH_W) '$<'` &&\
 	$(am__mv) $$depbase.Tpo $$depbase.Po
 
-ctags-am: LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+ctags-am: LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 605):
+#  recipe to execute (from 'Makefile', line 607):
 	$(am__define_uniq_tagged_files); \
 	test -z "$(CTAGS_ARGS)$$unique" \
 	  || $(CTAGS) $(CTAGSFLAGS) $(AM_CTAGSFLAGS) $(CTAGS_ARGS) \
@@ -9026,7 +9081,7 @@ install-ps: install-ps-am
 #  Last modified 2017-09-23 01:18:02.709151698
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 417):
+#  recipe to execute (from 'Makefile', line 419):
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
 ../m4/lt~obsolete.m4:
@@ -9056,7 +9111,7 @@ installdirs:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 667):
+#  recipe to execute (from 'Makefile', line 669):
 	for dir in "$(DESTDIR)$(bindir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
 	done
@@ -9088,12 +9143,12 @@ installdirs:
 #  File has been updated.
 #  Successfully updated.
 
-distdir: Makefile.am Makefile.in ../build-aux/depcomp LearnOpenGL/hello_triangle_indexed.cpp LearnOpenGL/glad.c
+distdir: Makefile.am Makefile.in ../build-aux/depcomp LearnOpenGL/shaders_interpolation.cpp LearnOpenGL/glad.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 634):
+#  recipe to execute (from 'Makefile', line 636):
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	list='$(DISTFILES)'; \
@@ -9196,22 +9251,22 @@ install-ps-am:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=246/1024=24%, Rehash=0, Collisions=490/1693=29%
+# Load=246/1024=24%, Rehash=0, Collisions=501/1693=30%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 4 (3) / strings = 1350 / storage = 31103 B / avg = 23 B
-# current buf: size = 8162 B / used = 6643 B / count = 312 / avg = 21 B
-# other used: total = 22941 B / count = 1038 / avg = 22 B
-# other free: total = 26 B / max = 16 B / min = 4 B / avg = 8 B
+# strcache buffers: 4 (3) / strings = 1356 / storage = 31213 B / avg = 23 B
+# current buf: size = 8162 B / used = 6759 B / count = 317 / avg = 21 B
+# other used: total = 23051 B / count = 1039 / avg = 22 B
+# other free: total = 32 B / max = 19 B / min = 6 B / avg = 10 B
 
-# strcache performance: lookups = 2050 / hit rate = 34%
+# strcache performance: lookups = 2056 / hit rate = 34%
 # hash-table stats:
-# Load=1350/8192=16%, Rehash=0, Collisions=238/2050=12%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Load=1356/8192=17%, Rehash=0, Collisions=230/2056=11%
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
 Making all in po
 make .pot-update
@@ -9284,7 +9339,7 @@ test ! -f .po || { \
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:48 2017
 
 # Variables
 
@@ -11186,7 +11241,7 @@ install: install-exec install-data
 # strcache performance: lookups = 388 / hit rate = 37%
 # hash-table stats:
 # Load=243/8192=3%, Rehash=0, Collisions=52/388=13%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
 test "0.19" = "0.19" || { echo "*** error: gettext infrastructure mismatch: using a Makefile.in.in from gettext version 0.19 but the autoconf macros are from gettext version 0.19" 1>&2; exit 1; }
 test ! -f ./.pot || \
@@ -11203,7 +11258,7 @@ test ! -f ./.pot || { \
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:48 2017
 
 # Variables
 
@@ -13126,7 +13181,7 @@ install: install-exec install-data
 # strcache performance: lookups = 391 / hit rate = 36%
 # hash-table stats:
 # Load=247/8192=3%, Rehash=0, Collisions=53/391=14%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
 test -f config.h || rm -f stamp-h1
 test -f config.h || make  stamp-h1
@@ -13137,7 +13192,7 @@ test -f config.h || make  stamp-h1
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:48 2017
 
 # Variables
 
@@ -16741,7 +16796,7 @@ mostlyclean-recursive:
 # strcache performance: lookups = 1023 / hit rate = 55%
 # hash-table stats:
 # Load=459/8192=6%, Rehash=0, Collisions=40/1023=4%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
@@ -16750,7 +16805,7 @@ mostlyclean-recursive:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:48 2017
 
 # Variables
 
@@ -20349,7 +20404,7 @@ mostlyclean-recursive:
 # strcache performance: lookups = 1023 / hit rate = 55%
 # hash-table stats:
 # Load=459/8192=6%, Rehash=0, Collisions=40/1023=4%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
@@ -20358,7 +20413,7 @@ mostlyclean-recursive:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Sep 23 01:30:24 2017
+# Make data base, printed on Sun Sep 24 19:34:48 2017
 
 # Variables
 
@@ -24010,5 +24065,5 @@ mostlyclean-recursive:
 # strcache performance: lookups = 1024 / hit rate = 55%
 # hash-table stats:
 # Load=459/8192=6%, Rehash=0, Collisions=40/1024=4%
-# Finished Make data base on Sat Sep 23 01:30:24 2017
+# Finished Make data base on Sun Sep 24 19:34:48 2017
 
